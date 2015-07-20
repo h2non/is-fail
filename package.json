@@ -1,6 +1,23 @@
 {
   "name": "is-fail",
   "version": "0.1.0",
+  "description": "Tiny package implementing multiple strategies to verify if an HTTP request was failed",
+  "repository": "h2non/is-fail",
+  "author": "Tomas Aparicio",
+  "license": "MIT",
+  "keywords": [
+    "fail",
+    "checker",
+    "http",
+    "status",
+    "retry"
+  ],
+  "engines": {
+    "node": ">= 0.8"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec --ui tdd"
+  },
   "dependencies": {
     "chai": "^3.2.0",
     "mocha": "^2.2.5"
