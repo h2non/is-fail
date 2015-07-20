@@ -8,9 +8,13 @@
   "keywords": [
     "fail",
     "checker",
+    "check",
     "http",
     "status",
-    "retry"
+    "retry",
+    "backoff",
+    "failed",
+    "error"
   ],
   "engines": {
     "node": ">= 0.8"
