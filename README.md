@@ -19,7 +19,7 @@ const isFail = require('is-fail')()
 
 function doRequest() {
   http.request('http://inconsistent-server', function (res) {
-    if (isFail(res)) {
+    if (isFail(null, res)) {
       return doRequest() // retry!
     }
     console.error('Response received')
@@ -48,7 +48,7 @@ function notFoundStrategy(err, res) {
 const checkFail = isFail([ notFoundStrategy ])
 
 http.request('http://inconsistent-server', function (res) {
-  if (checkFail(res)) {
+  if (checkFail(null, res)) {
     console.log('Failed request!')
   }
 })
