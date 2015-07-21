@@ -1,6 +1,6 @@
 {
   "name": "is-fail",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Tiny package implementing multiple strategies to verify if an HTTP request was failed",
   "repository": "h2non/is-fail",
   "author": "Tomas Aparicio",
