@@ -39,7 +39,7 @@ Plug in additional strategies
 
 ```js
 const http = require('http')
-const isFail = require('is-fail')()
+const isFail = require('is-fail')
 
 function notFoundStrategy(err, res) {
   return res.statusCode === 404
